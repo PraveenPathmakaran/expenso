@@ -94,11 +94,23 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[Locale('en')];
 
-  /// No description provided for @helloWorld.
+  /// No description provided for @expenso.
   ///
   /// In en, this message translates to:
-  /// **'Hello World!'**
-  String get helloWorld;
+  /// **'EXPENSO'**
+  String get expenso;
+
+  /// No description provided for @trackSmart.
+  ///
+  /// In en, this message translates to:
+  /// **'Track Smart, Spend Better'**
+  String get trackSmart;
+
+  /// No description provided for @secure.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure'**
+  String get secure;
 }
 
 class _AppLocalizationsDelegate
