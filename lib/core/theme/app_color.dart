@@ -6,15 +6,19 @@ class AppColors {
   static const Color accent = Color(0xFFFFC107);
 
   // Light Theme Colors
+  static const Color lightBackgroundPrimary = Color(0xFFE8F5E9);
   static const Color lightBackground = Color(0xFFFFFFFF);
   static const Color lightCard = Color(0xFFF5F5F5);
   static const Color lightText = Color(0xFF212121);
+  static const Color titleTextColor = Color(0xFF1B5E20);
+  static const Color lightTaglineTextColor = Color(0xFF757575);
 
   // Dark Theme Colors
   static const Color darkBackgroundPrimary = Color(0xFF1A2E1C);
   static const Color darkBackground = Color(0xFF121212);
   static const Color darkCard = Color(0xFF1E1E1E);
   static const Color darkText = Color(0xFFFFFFFF);
+  static const Color darkTaglineTextColor = Color(0xFFBDBDBD);
 
   // Common
   static const Color error = Colors.red;

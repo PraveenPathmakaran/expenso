@@ -2,6 +2,7 @@ import 'package:expenso/core/extension/app_extension.dart';
 import 'package:expenso/core/theme/app_color.dart';
 import 'package:expenso/core/theme/app_sized_box.dart';
 import 'package:expenso/features/splash/presentation/widgets/app_background.dart';
+import 'package:expenso/features/splash/presentation/widgets/splash_icon_widget.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -21,12 +22,23 @@ class SplashScreen extends StatelessWidget {
               Expanded(child: SizedBox()),
               SplashIconWidget(),
               AppSizedBox.height5,
-              Text(context.l.expenso, style: context.h1),
+              Text(
+                context.l.expenso,
+                style: context.h1?.copyWith(
+                  color: context.isDark
+                      ? AppColors.lightBackground
+                      : AppColors.titleTextColor,
+                ),
+              ),
               AppSizedBox.height5,
 
               Text(
                 context.l.trackSmart,
-                style: context.bodyMd?.copyWith(color: AppColors.divider),
+                style: context.bodyMd?.copyWith(
+                  color: context.isDark
+                      ? AppColors.lightTaglineTextColor
+                      : AppColors.darkTaglineTextColor,
+                ),
               ),
               Expanded(child: SizedBox()),
               SizedBox(
@@ -42,26 +54,6 @@ class SplashScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class SplashIconWidget extends StatelessWidget {
-  const SplashIconWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(context.wp(0.05)),
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(100),
-      ),
-      child: Icon(
-        Icons.account_balance_wallet_rounded,
-        size: context.wp(0.15),
-        color: AppColors.lightBackground,
       ),
     );
   }

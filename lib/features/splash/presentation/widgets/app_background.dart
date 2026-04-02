@@ -15,7 +15,7 @@ class AppBackground extends StatelessWidget {
           radius: 1.2,
           colors: context.isDark
               ? [AppColors.darkBackgroundPrimary, AppColors.darkBackground]
-              : [Color(0xFFE8F5E9), Colors.white],
+              : [AppColors.lightBackgroundPrimary, AppColors.lightBackground],
         ),
       ),
       child: child,
