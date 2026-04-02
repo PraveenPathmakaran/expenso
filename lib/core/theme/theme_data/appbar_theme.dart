@@ -1,4 +1,5 @@
 import 'package:expenso/core/theme/app_color.dart';
+import 'package:expenso/core/theme/app_font_size.dart';
 import 'package:flutter/material.dart';
 
 class AppbarTheme {
@@ -10,7 +11,7 @@ class AppbarTheme {
     iconTheme: IconThemeData(color: AppColors.darkText),
     titleTextStyle: TextStyle(
       color: AppColors.darkText,
-      fontSize: 18,
+      fontSize: AppFontSizes.lg,
       fontWeight: FontWeight.w600,
     ),
   );
@@ -21,7 +22,7 @@ class AppbarTheme {
     iconTheme: IconThemeData(color: AppColors.lightText),
     titleTextStyle: TextStyle(
       color: AppColors.lightText,
-      fontSize: 18,
+      fontSize: AppFontSizes.lg,
       fontWeight: FontWeight.w600,
     ),
   );

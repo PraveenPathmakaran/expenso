@@ -1,4 +1,5 @@
 import 'package:expenso/core/extension/app_extension.dart';
+import 'package:expenso/core/theme/app_color.dart';
 import 'package:flutter/material.dart';
 
 class AppBackground extends StatelessWidget {
@@ -13,7 +14,7 @@ class AppBackground extends StatelessWidget {
         gradient: RadialGradient(
           radius: 1.2,
           colors: context.isDark
-              ? [Color(0xFF1A2E1C), Color(0xFF121212)]
+              ? [AppColors.darkBackgroundPrimary, AppColors.darkBackground]
               : [Color(0xFFE8F5E9), Colors.white],
         ),
       ),

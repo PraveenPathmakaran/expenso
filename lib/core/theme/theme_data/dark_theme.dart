@@ -1,4 +1,4 @@
-import 'package:expenso/core/theme/theme_data/app_constant.dart';
+import 'package:expenso/core/theme/app_constant.dart';
 import 'package:expenso/core/theme/theme_data/app_text_theme.dart';
 import 'package:expenso/core/theme/theme_data/appbar_theme.dart';
 import 'package:expenso/core/theme/theme_data/bottom_navigation_bar_theme.dart';

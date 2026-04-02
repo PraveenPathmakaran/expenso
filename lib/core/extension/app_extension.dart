@@ -25,7 +25,7 @@ extension TextStyleExtension on BuildContext {
 
 
 extension SizeExtension on BuildContext {
-  Size get screenSize => MediaQuery.of(this).size;
+  Size get screenSize => MediaQuery.sizeOf(this);
 
   double wp(double percent) => screenSize.width * percent;
   double hp(double percent) => screenSize.height * percent;
