@@ -1,5 +1,5 @@
 import 'package:expenso/core/theme/theme_data/app_theme.dart';
-import 'package:expenso/features/splash/presentation/page/splash_screen.dart';
+import 'package:expenso/features/home/presentation/pages/home_screen.dart';
 import 'package:expenso/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         Locale('en'), // English
         Locale('es'), // Spanish
       ],
-      home: const SplashScreen(),
+      home: const HomeScreen(),
     );
   }
 }

@@ -16,4 +16,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get secure => 'Secure';
+
+  @override
+  String get home => 'Home';
 }
